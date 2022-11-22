@@ -20,7 +20,7 @@ body {
     padding: 0;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 100;
     display: block;
   }
   
@@ -32,22 +32,23 @@ body {
     text-decoration: none;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    
   }
  .a{
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 25px;
-    padding: 5px;
+    border-radius: 20px;
     background-color:rgba(0, 0, 0, 0.5);
+    width: 125px;
  }
  .active{
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 25px;
-    padding: 5px;
+    border: 1px solid #6fff00a8;
+    border-radius: 20px;
     background-color:rgba(0, 0, 0, 0.5);
+    width: 125px;
  }
-  .topnav a:hover {
+  .topnav .a:hover {
     color: #6fff00a8;
+    border: 1px solid #6fff00a8;
+    transition: 0.5s;
   }
   
   .topnav a.active {
@@ -74,7 +75,7 @@ body {
     min-width: 35px  !important;
   }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
     .topnav a {display: none;}
     .topnav a.activep {
         display: block;
@@ -136,11 +137,18 @@ body {
     .a{
       width: fit-content;
       margin: 5px ;
+      width: 90px;
    }
    .active{
       width: fit-content;
       margin: 5px ;
-      
+      width: 90px;
+   }
+   body{
+    padding-bottom: 100px;
+   }
+   .poza{
+    width: 200px;
    }
 }
   h3 {
@@ -151,7 +159,7 @@ body {
   }
 
   img{
-    width: 50px;
+    width: 60px;
     display: inline-block;
     padding: 0;
     margin: 0;
@@ -166,8 +174,9 @@ h3{
   text-align: left;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(255, 255, 255);
-  margin-left: 25px;
-  font-size: 30px;
+  left: 100px auto;
+  font-size: 3vw;
+  margin-top: 100px;
 }
 .video {
   width: 100%;
@@ -180,11 +189,11 @@ h3{
   position:fixed;
   color: #f1f1f1;
   width: 100%;
-  padding: 10px;
+  padding-bottom: 10px;
   text-align: center;
   margin: 0;
   bottom: 0;
-  background-color: #0000008c;
+  z-index: 100;
 }
 #timer {
   font-size: 2.5vw;
@@ -195,6 +204,7 @@ h3{
   text-shadow: 0 0 20px #0eea9d;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  z-index: 100;
 }
 #timer div {
   display: inline-block;
@@ -264,16 +274,112 @@ p{
   box-shadow: #537a00 0 3px 7px inset;
   transform: translateY(2px);
 }
-.container{
+
+.btn2{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffffa8;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  width: 10vw;
+  padding: 10px;
+  overflow: hidden;
   text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  z-index: 0;
+  display: inline-block;
+}
+.btn2:hover {
+  color:#537a00;
+  border: 1px solid #537a00;
+  transition: 0.5s;
+}
+.lista .con{
+  position: absolute;
+  background-color: #ffffffa8;
+  color: #f1f1f1;
+  padding: 20px;
+  top: 0;
+  width: 100%;
 }
 .lista{
   display: inline-block;
-  width: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 50px;
+  position: relative;
+  transform: scale(1); 
+  transition: transform 0.5s;
 }
-.coloana{
+.poza{
+  width: 500px;
+}
+.lista:hover{
+  transform: scale(1.1);
+}
+.lista .con2{
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ffffffa8;
+}
+.txt{
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.lista .con3{
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 20px;
+  width: 50px;
+  height: fit-content;
+  background-color: rgb(255, 64, 64);
+  text-align: center;
+}
+.txt2{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  writing-mode:tb-rl;
+  margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.txt3{
+  font-size: 16px;
+  color: #000000;
+}
+.txt4{
+  font-size: 14px;
+  color: #000000;
+}
+.inlinie{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.lista .coninchis{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.txt5{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 150px;
+  right: 170px;
+  display: block;
+  position: absolute;
 }

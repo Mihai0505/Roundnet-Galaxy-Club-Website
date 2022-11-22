@@ -8,7 +8,7 @@ function myFunction() {
   }
 
   function updateTimer() {
-    future = Date.parse("nov 25, 2022 00:00:00");
+    future = Date.parse("nov 26, 2022 00:09:00");
     now = new Date();
     diff = future - now;
 
@@ -30,3 +30,14 @@ function myFunction() {
         '<div>' + s + '<span>seconds</span></div>';
 }
 setInterval('updateTimer()', 1000);
+
+document.addEventListener("DOMContentLoaded", function(){
+  document.body.addEventListener("touchstart", playVideo);
+  function playVideo() {
+      const video = document.getElementById('myVideo');
+      if(video.playing) {
+      } else {
+          video.play();
+      }
+  }
+});
