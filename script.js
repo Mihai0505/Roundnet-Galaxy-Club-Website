@@ -29,8 +29,7 @@ function myFunction() {
     m = mins - hours * 60;
     s = secs - mins * 60;
 
-    document.getElementById("timer")
-        .innerHTML =
+    document.getElementById("timer").innerHTML =
         '<div>' + d + '<span>days</span></div>' +
         '<div>' + h + '<span>hours</span></div>' +
         '<div>' + m + '<span>minutes</span></div>' +

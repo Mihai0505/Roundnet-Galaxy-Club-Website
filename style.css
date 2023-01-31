@@ -269,9 +269,6 @@ body {
       width: 140px;
       padding: 10px 10px !important;
    }
-   body{
-    padding-bottom: 100px;
-   }
    .poza{
     width: 200px;
    }
@@ -286,9 +283,9 @@ body {
    }
    .btn-grad{
     max-width: 250px;
-    font-size: 15px !important;
+    font-size: 18px !important;
     margin: 5px auto !important;
-    padding: 5px 15px !important;
+    padding: 15px 30px !important;
    }
    .close{
     font-size: 20px !important;
@@ -651,7 +648,6 @@ section{
   margin: auto;
   display: block;
   text-align: center;
-  position: relative;
   background-color: #00bfff;
   padding: 50px;
   width: 100%;
@@ -707,6 +703,62 @@ section{
   }
   .h2over{
     font-size: 40px !important;
+  }
+  .box6{
+    padding: 5px;
+  }
+  .dropdown{
+    margin: 15px 10px !important;
+
+  }
+  .echipe{
+    font-size: 18px;
+  }
+  .echipemic{
+    font-size: 13px;
+  }
+  .pozaoverlay1, .pozaoverlay2{
+    width:100% !important;
+    height: fit-content !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5 !important;
+  }
+  .contact{
+    max-width: 45px;
+    border-radius: 15px !important;
+  }
+  .card2 {
+    max-width: 320px;
+    margin: 5px auto;
+    border-radius: 30px;
+  }
+  .h4event{
+    font-size: 30px !important;
+  }
+  .pevent{
+    font-size: 20px !important;
+  }
+  .centrarefinal{
+    padding: 30px;
+  }
+  .card3 {
+    max-width: 320px;
+    margin: 10px auto;
+  }
+  .card4 {
+    max-width: 320px;
+    margin: 10px auto;
+  }
+  .card {
+    max-width: 320px !important;
+    margin: 10px auto;
+  }
+  .h2team{
+    font-size: 25px !important;
+    padding: 25px;
   }
 }
 .container { 
@@ -1047,14 +1099,13 @@ section{
 
 .dropdown:hover .dropdown-content {
   display: block;
-  background-color:#ffffff;
 }
 
 .pozaoverlay1{
   width:50%;
   height: 100%;
   position: absolute;
-  top:0;
+  bottom:0;
   z-index:3;
   right: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -1064,7 +1115,7 @@ section{
   width: 50%;
   height: 100%;
   position: absolute;
-  top:0;
+  bottom:0;
   z-index:3;
   left: 0;
   background-color: #000;
