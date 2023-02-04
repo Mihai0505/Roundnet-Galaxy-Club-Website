@@ -1,0 +1,65 @@
+.h3_sectiunea1{
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-top: 60px;
+  }
+  .h3_sectiunea2{
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding: 30px;
+    background-color: #00a2ff;
+  }
+  .a{
+    border: 1px solid rgb(255, 255, 255); 
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #000000;
+    text-align: center;
+ }
+
+ .topnav2 {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  z-index: 0;
+  display: block;
+  margin: 0;
+  align-items: center;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+.topnav2 a {    
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:2px;
+}
+
+
+
+  .topnav2 .a:hover {
+    color: rgb(0, 255, 157);;
+    border: 1px solid rgb(0, 255, 157);
+    transition: 0.5s;
+  }
+  
+  .topnav2 a.active {
+    color: rgb(0, 255, 157);
+  }
+  
