@@ -20,3 +20,20 @@
   padding: auto;
 
 }
+.sectiune_roundnet{
+  background-color: #ffffff;
+  position: relative;
+}
+.dropdown {
+  padding: 20px;
+  margin: 20px;
+  background-color:#00a2ff;
+  border-radius: 40px;
+  width: 550px;
+  height: fit-content;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-content {
+  display: none;
+}

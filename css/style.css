@@ -5,11 +5,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  overflow-x: hidden;
+
+}
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
+
 }
 /*---------------------------------------------meniu---------------------------------------------------*/
 .topnav {
@@ -25,7 +30,7 @@ body {
     place-items: center;
     align-content: center;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); 
   }
 
   .topnav a {    
@@ -81,16 +86,15 @@ body {
 .a4{
   display: block;
   color: #ffffff;
-  padding: 10px 10px;
+  padding: 5px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
   width: 250px;
   cursor: pointer;
   text-align: center;
-  margin: 10px auto;
+  margin:auto;
 }
  .a2:hover{
     color: rgb(0, 255, 157);;
@@ -115,28 +119,34 @@ body {
  .activep{
   width: 100px;
  }
- .l1{
-  width: 40px;
- }
- .l2{
-  width: 80px;
- }
 .logo{
   width: 70px;
  }
+ .logof{
+  width: 70px;
+ }
 .logo2{
-  width: 40px;
-  margin: 4px;
+  width: 35px;
+}
+.l1{
+  padding: 0 !important;
+}
+.l2{
+  padding: 0 !important;
 }
 .icone{
   display: inline;
   float: left;
-  padding: 10px 10px;
+  padding-top: 25px !important;
+  margin-top: 2px;
+  width: 100px;
 }
 .cos{
   display: inline;
   float: right;
-  padding: 10px 10px;
+  padding-top: 25px !important;
+  margin-top: 2px;
+  width: 100px;
 }
   .topnav .a:hover {
     color: rgb(0, 255, 157);;
@@ -171,7 +181,17 @@ body {
       width: 35px;
     }
     .logo{
-      width: 40px;
+      width: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top:2px;
+    }
+    .logof{
+      width: 50px;
+    }
+    .icone{
+      display: none;
     }
     .logo2{
       width: 35px;
@@ -188,17 +208,15 @@ body {
       padding: 0;
      }
     .cos{
-      float: none;
       position: absolute;
-      right: 50px;
+      left:-15px;
+      top: -15px;
     }
     .cos a{
       display: inline;
     }
     .topnav.responsive .cos{
-      position: absolute;
-      right: 73px;
-      top: -12px;
+      display: none;
     }
     .topnav.responsive .icone{
       display: none;
@@ -245,7 +263,6 @@ body {
     }
     #timer {
       font-size: 20px !important;
-      margin: 5px auto !important;
       max-width: 300px;
     }
     #timer div {
@@ -313,35 +330,6 @@ body {
     display: inline-block;
     vertical-align:middle;
   }
-#timer {
-  font-size: 2.5vw;
-  color: rgb(0, 255, 157);
-  border: 2px solid rgb(0, 255, 157);
-  border-radius: 10px;
-  width: 500px;
-  text-shadow: 0 0 20px #0eea9d;
-  text-align: center;
-  z-index: 100;
-  margin: auto;
-  margin-bottom: 10px;
-}
-#timer div {
-  display: inline-block;
-  min-width: 50px;
-  text-align: center;
-  margin: auto;
-  width: 100px;
-}
-
-#timer div span {
-  color: #1fd681;
-  display: block;
-  font-size: .35em;
-  font-weight: 400;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-align: center;
-}
 .btn2{
   border: 1px solid rgb(255, 255, 255);
   border-radius: 25px;
@@ -634,7 +622,11 @@ body {
     background-size: 100%;
   }*/
   .h3_sectiunea2{
-    font-size: 25px;
+    font-size: 25px !important;
+  }
+  .h3_sectiunea1{
+    font-size: 40px !important;
+    margin-top: 30px !important;
 
   }
   .h3over{
@@ -645,25 +637,6 @@ body {
   }
   .box6{
     padding: 5px;
-  }
-  .dropdown{
-    margin: 15px 10px !important;
-
-  }
-  .echipe{
-    font-size: 18px;
-  }
-  .echipemic{
-    font-size: 13px;
-  }
-  .pozaoverlay1, .pozaoverlay2{
-    width:100% !important;
-    height: fit-content !important;
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 5 !important;
   }
   .contact{
     max-width: 45px;
@@ -699,6 +672,32 @@ body {
     font-size: 25px !important;
     padding: 25px;
   }
+  .box7{
+    padding: 10px !important;
+  }
+  .a2{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgb(255, 255, 255); 
+    max-width: 135px;
+    cursor: pointer;
+    text-align: center;
+ }
+ .a3{
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 135px;
+  cursor: pointer;
+  text-align: center;
+}
 }
 
 .flip-card {
@@ -731,10 +730,10 @@ body {
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover  .flip-card-inner {
   transform: rotateY(180deg);
 }
-.flip-card1:hover .flip-card-inner {
+.flip-card1:hover, flip-card1:active .flip-card-inner {
   transform: rotateY(180deg);
 }
 .flip-card-front, .flip-card-back {
@@ -985,47 +984,10 @@ body {
   padding: 50px;
 }
 
-.dropdown {
-  padding: 20px;
-  margin: 20px;
-  background-color:#00a2ff;
-  border-radius: 40px;
-  width: 550px;
-  height: fit-content;
-}
 
-.dropdown-content {
-  display: none;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.pozaoverlay1{
-  width:50%;
-  height: 100%;
-  position: absolute;
-  bottom:0;
-  z-index:3;
-  right: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  background-color: #000;
-}
-.pozaoverlay2{
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  bottom:0;
-  z-index:3;
-  left: 0;
-  background-color: #000;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
 .para_final{
   color: white;
   text-align: center;
-  margin: 25px auto;
   justify-content: center;
 }
 .box7{
